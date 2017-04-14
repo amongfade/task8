@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        .a{
+            background-color:blue;
+
+
+        }
+        .b{
+            background-color: red;
+        }
+        .space{
+            width: 90%;
+        }
+        .space1{
+            width: 80%
+        }
+        .space2{
+            width: 60%
+        }
+        .space3{
+            width: 10%;
+        }
+        .he{
+            height: 40px;
+        }
+        .wh{
+            width: 200px;
+            height: 200px;
+            border: 1px solid yellow;
+        }
+    </style>
+</head>
+<body>
+        <table class="wh">
+        <tbody>
+            <tr>
+                <td colspan="5" class="a he"></td>
+                <td colspan="5" class="b he"></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="a he"></td>
+                <td colspan="6" class="b he"></td>
+            </tr>
+            <tr>
+            <td colspan="3" class="a he space3"></td>
+            <td colspan="7" class="b he space2"></td>
+            </tr>
+            <tr>
+             <td colspan="3" class="a he"></td>
+            <td colspan="7" class="b he"></td>
+            </tr>
+            <tr>
+                <td rowspan="3" colspan="2" class="a"> </td>
+                <td colspan="8" class="b"></td>
+
+            </tr>
+            <tr>
+                <td colspan="8" class="b"></td>
+               
+            </tr>
+             <tr>
+                <td colspan="8" class="b"></td>
+               
+            </tr>
+        </tbody>
+        </table>
+</body>
+</html>

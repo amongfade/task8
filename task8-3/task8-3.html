@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>task8-3</title>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        *{
+            body:0;
+            margin:0;
+        }
+        body{
+            background-color: #fafafa;
+        }
+        header{
+            margin-bottom: -20px;
+            height: 40px;
+            line-height: 40px;
+            background: #fff;
+        }
+
+        .mkcet{
+            line-height: 40px;
+            text-align: right;
+        }
+        .heset{
+            height: 40px;
+            font-size: 1.6rem;
+        }
+
+        .phone{
+            line-height: 40px;
+            color: #29b078;
+            white-space: nowrap;
+        }
+        .nav {
+            background-color: #29b078;
+            color: #fff;
+            font-size: 1.2em;
+            box-sizing: border-box;
+        }
+        .nav-pad {
+            padding: 0;
+        }
+        .jnshu {
+           width:150px ;
+            height: 50px;
+            margin: 1.5em 0 1em 0;
+            background-image: url(image/co.jpg);
+            background-repeat: no-repeat;
+            background-position: 15px center;
+            display: inline-block;
+        }
+
+        .navbar-toggle {
+            background-color: #fff;
+        }
+        .icon-bar {
+            background-color: #999;
+        }
+        .nav ul {
+            width: 50%;
+            margin: 0;
+        }
+        .nav ul li{
+        display: inline-block;
+        margin: 0 1.25em;
+        padding: 35px 0;
+        box-sizing: border-box;
+        color: #fff;
+        }
+
+
+        .nav ul li:hover{
+            border-bottom: 5px #fff solid;
+        }
+
+        .nav1{
+            background:#29b078;
+            width:100%;
+            margin: 0;
+
+        }
+        .nav2{
+
+            color:#ffffff;
+            font-size: 1.6rem;
+
+        }
+        .nav ul li a{
+            font-size: 16px;
+            color: #fff;
+            text-decoration: none;
+            height: 63px
+        }
+
+
+      .a{
+            border:1px solid #999999;
+        }
+      .b{
+          padding: 10px 5px;
+      }
+        main img{
+            float:left;
+
+        }
+        td{
+
+        }
+        .fare{
+            position: relative;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+        .fade{
+            position: absolute;
+
+        }
+
+        .word1{
+            font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "SimSun";
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .border{
+            border-bottom:1px solid #999999;
+            padding-bottom: 20px;
+        }
+        .colorwarp{
+            color: #ff5c00 ;
+            font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "SimSun";
+            font-weight: bold;
+            font-size: 16px;
+
+        }
+        .word2{
+            word-break:break-all;
+            font-size: 14px;
+        }
+        .word3{
+            font-size: 14px;
+            color: #999999;
+            display: inline-block;
+
+        }
+        .frame{
+            position: relative;
+            box-sizing: border-box;
+            width: 100%;
+            border:1px solid #ffffff;
+            background-color: white;
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            display: inline-block;
+            float:right;
+        }
+        .center{
+            text-align: center;
+            vertical-align: middle;
+        }
+        .space{
+            width: 40%;
+        }
+        .space1{
+            width: 50%;
+        }
+        space{
+            width: 100%;
+        }
+        .text{
+            height:40px;
+            line-height: 40px;
+            font-size: 14px;
+            color: #999999;
+        }
+        .text1{
+            padding: 14px 5px;
+            font-size: 14px;
+            color: #999999;
+        }
+        .color-word{
+            color: #ff5c00;
+            height: 40px;
+            line-height: 40px;
+            font-size: 14px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .images{
+            background-image: url("image/star.jpg");
+            background-position:40px center;
+            background-repeat: no-repeat;
+        }
+        .imagess{
+            background-image: url("image/stars.jpg");
+            background-position:60px center;
+            background-repeat: no-repeat;
+        }
+        /*.imagesss{*/
+            /*background-image: url("image/star.jpg");*/
+            /*background-position:80px center;*/
+            /*background-repeat: no-repeat;*/
+        /*}*/
+        .rect{
+            height: 80px;
+            font-size: 16px;
+
+            line-height: 80px;
+        }
+        .rect-next{
+           
+            font-size: 14px;
+
+            margin-top: 20px;
+        }
+
+
+        .fontcolor9{
+            color: #999999;
+        }
+        .fontcolor2{
+            color: #29b078;
+        }
+        .fontcolor22{
+            color: #222222;
+            padding: 5px;
+        }
+        a.fontcolor22:hover{
+            background-color:#29b078 ;
+            text-decoration: none;
+            color: white;
+        }
+        .pad1{
+            padding-left: 2%;
+            margin: 30px 0 15px 0;
+            color: #ffffff;
+            font-size: 1.6rem;
+        }
+        .li1{
+            border-right: 1px solid #ffffff;
+            border-left: 1px solid #ffffff;
+
+        }
+        .p6{
+            border-top: 1px solid #32c086;
+            font-size: 1.2rem;
+            color: white;
+            background-color: #29b078;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+        .pad{
+            margin-top: 55px;
+            padding-left: 0;
+        }
+        footer{
+            height: auto;
+            margin-top: 120px;
+            background-color:#29b078;
+        }
+        footer ul{
+            list-style: none;
+        }
+        footer a{
+            color: #ffffff;
+            font-size: 1.6rem;
+            float: left;
+            padding:0 2%;
+
+        }
+        footer a:hover{
+            text-decoration: none;
+            color: white;
+        }
+
+        .p10{font-size: 1.14em;
+            color: #fff}
+        .bottom03{margin-bottom: 2%}
+        .text-left{text-align: left;
+            text-indent: 2em}
+        .text01{
+
+
+            height:100%;
+            margin-right: 15px;
+            padding:25% 0;
+            position: absolute;
+            top:0;
+            left:15;
+            text-align: center;
+            background-color: #000;
+            transform: rotateX(-180deg);
+            opacity: 1;
+            backface-visibility: hidden;
+            box-sizing: border-box;
+            z-index:99999;
+        }
+        tab{
+
+        }
+        .fare:hover .text01{
+            transform: rotateX(0deg);
+            transition: 3s;
+            opacity: 0.8;
+        }
+        .navbar-toggle .icon-bar{
+            background-color: #29b078;
+        }
+        .nav ul li a{
+            font-size: 1rem;
+            color: #fff;
+            text-decoration: none;
+            height: 63px
+        }
+        .navbar-nav>li>a:hover{
+            border-bottom: 3px #ffffff solid;
+            background-color: #29b078;
+            color: white;
+        }
+        p{
+            margin: 0;
+            padding-left: 5px;
+        }
+       td{
+           padding: 5px;
+       }
+            @media (max-width: 776px){
+
+.end {
+    text-align: center!important;
+}
+}
+
+
+
+        @media screen and (min-width:768px)  {
+            .end{
+                float: right;
+            }
+        }
+        @media (max-width: 996px){
+        .pad1{
+            text-align: center;
+        }
+        footer a{
+            margin: 0 auto;
+        }
+        .pad{
+            margin-left: 38%;
+        }
+        .tr{
+            text-align: center;
+        }
+
+
+        }
+        @media (max-width: 768px){
+            .pad{
+                margin-left: 35%;
+            }
+                .nav ul{
+                width: 100%;
+                opacity: 0.9;
+                z-index: 9999;
+            }
+            .nav ul li {
+                display: block;
+                text-align: center;
+            }
+        }
+        @media (max-width: 600px){
+            .pad{
+                margin-left: 30%;
+            }
+        }
+@media(max-width: 450px){
+    .pad{
+        margin-left: 20%;
+    }
+}
+    </style>
+<body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 phone heset">客服热线：010-7834</div>
+        <div class="col-md-8 col-lg-8 col-sm-7 col-xs-4" ></div>
+
+        <div class="col-md-2 col-lg-2 col-sm-3 col-xs-6 mkcet" >
+            <img src="image/group.jpg" alt="" class="call"></div>
+
+       </div>
+</div>
+</header>
+<nav class=" nav1">
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <img src="image/co.jpg" alt="">
+            </div>
+            <button type="button" class="navbar-toggle btn btn-priamry" data-toggle="collapse" data-target="#example-navbar-collapse" aria-expanded="true" style="background-color: #ffffff;margin-top:18px"">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"style="margin-top: 10px;>
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav pullright end">
+                        <li><a href="../task8-1/task8-1.html" class="nav2 bottom">首页</a></li>
+                        <li><a href="../task8-3/task8-3.html" class="nav2 bottom">职业</a></li>
+                        <li><a href="#" class="nav2">推荐</a></li>
+                        <li><a href="#" class="nav2">关于</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container rect">
+    <div style="border-bottom: 1px solid #999999">
+        <span>首页></span>
+        <span class="fontcolor2">职业</span>
+    </div>
+</div>
+<div class="container rect-next">
+
+    <span class="fontcolor9"> 方向：</span>
+    <span><a href="" class="fontcolor22">全部</a></span>
+    <span><a href="" class="fontcolor22">前端开发</a></span>
+    <span><a href="" class="fontcolor22">后端开发</a></span>
+    <span><a href="" class="fontcolor22">移动开发</a></span>
+    <span><a href="" class="fontcolor22">运营维护</a></span>
+
+</div>
+<div class="container word1 " style="margin-top: 20px">
+    <p class="border">前端开发方向</p>
+</div>
+<main class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12  fare">
+            <div class="text01">
+                <p class="p10 bottom03">ios工程师</p>
+                <p class="p10 text-left">ios是由苹果公司开发的移动操作系统，ios与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内ios开发起步相对较晚，人才培养机制更是远远更不上市场发展速度。有限的ios开发人才成了国内企业必争的资源。</p>
+            </div>
+            <div>
+            <table width="100%">
+            <tbody class="frame">
+                <tr class="a">
+                    <td colspan="5">
+                        <img src="image/photo.jpg" alt="">
+                    </td>
+                    <td colspan="5" style="height: 141px">
+                        <p class="word1">web前端工程师</p>
+                        <p class="word2">web前端开发工程师，主要职责是利用（X）HTML/CSS/Javascript/flash等各种Web技术进行产品的开发</p>
+                    </td>
+                </tr>
+            <tr class="a">
+                <td colspan="5" class="space1 a images">
+                    <span class="left text">门槛</span>
+
+                </td>
+                <td colspan="5"  class="space1  imagess imagesss">
+                    <span class="text">难易程度</span>
+
+                </td>
+            </tr>
+                <tr class="a">
+                <td colspan="5"  class="space1 a">
+                    <span class="left text">成长周期</span>
+                    <span class="color-word">1-3</span>
+                    <span class="text">年</span>
+                </td>
+                <td colspan="5"  class="space1">
+                    <span class="text">难易程度</span>
+                    <span class="color-word">345</span>
+                    <span class="text">家公司需要</span>
+                </td>
+
+            </tr>
+            <tr class="a">
+                <td colspan="4" rowspan="3" class="space a">
+               <span class="text" >薪资待遇</span>
+                </td>
+                <td colspan="6" class="text">
+                    <span>0-1年</span>
+                    <span class="right">5k-10k/月</span>
+                </td>
+            </tr>
+            <tr class="a">
+                <td colspan="6" class="text">
+                    <span>1-3年</span>
+                    <span class="right">5k-10k/月</span>
+                </td>
+            </tr>
+            <tr class="a">
+                <td colspan="6" class="text">
+                    <span>0-3年</span>
+                    <span class="right">20k-50k/月</span>
+                </td>
+            </tr>
+           </td>
+                </tr>
+            <tr>
+                <td colspan="10"  class="a b">
+                <span  class="word1">有</span>
+                <span class="colorwarp">286</span>
+                <span class="word1">人正在学</span>
+                </td>
+            </tr>
+            <tr class="a">
+                <td colspan="10" class="text1">
+                <span>提示：在你学习之前你应该掌握xxxx、xxxxx、xx等语言基础</span>
+                </td>
+            </tr>
+
+            </tbody>
+            </table>
+            </div>
+
+    </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12  fare">
+            <table width="100%">
+                <tbody class="frame">
+                <tr class="a">
+                    <td colspan="5">
+                        <img src="image/photo.jpg" alt="">
+                    </td>
+                    <td colspan="5" style="height: 141px">
+                        <p class="word1">web前端工程师</p>
+                        <p class="word2">web前端开发工程师，主要职责是利用（X）HTML/CSS/Javascript/flash等各种Web技术进行产品的开发</p>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="5" class="space1 a images">
+                        <span class="left text">门槛</span>
+
+                    </td>
+                    <td colspan="5"  class="space1  imagess imagesss">
+                        <span class="text">难易程度</span>
+
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="5"  class="space1 a">
+                        <span class="left text">成长周期</span>
+                        <span class="color-word">1-3</span>
+                        <span class="text">年</span>
+                    </td>
+                    <td colspan="5"  class="space1">
+                        <span class="text">难易程度</span>
+                        <span class="color-word">345</span>
+                        <span class="text">家公司需要</span>
+                    </td>
+
+                </tr>
+                <tr class="a">
+                    <td colspan="4" rowspan="3" class="space a">
+                        <span class="text" >薪资待遇</span>
+                    </td>
+                    <td colspan="6" class="text">
+                        <span>0-1年</span>
+                        <span class="right">5k-10k/月</span>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="6" class="text">
+                        <span>1-3年</span>
+                        <span class="right">5k-10k/月</span>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="6" class="text">
+                        <span>0-3年</span>
+                        <span class="right">20k-50k/月</span>
+                    </td>
+                </tr>
+                </td>
+                </tr>
+                <tr>
+                    <td colspan="10"  class="a b">
+                        <span  class="word1">有</span>
+                        <span class="colorwarp">286</span>
+                        <span class="word1">人正在学</span>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="10" class="text1">
+                        <span>提示：在你学习之前你应该掌握xxxx、xxxxx、xx等语言基础</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="text01">
+                <p class="p10 bottom03">ios工程师</p>
+                <p class="p10 text-left">ios是由苹果公司开发的移动操作系统，ios与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内ios开发起步相对较晚，人才培养机制更是远远更不上市场发展速度。有限的ios开发人才成了国内企业必争的资源。</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12  fare">
+            <table width="100%">
+                <tbody class="frame">
+                <tr class="a">
+                    <td colspan="5">
+                        <img src="image/photo.jpg" alt="">
+                    </td>
+                    <td colspan="5" style="height: 141px">
+                        <p class="word1">web前端工程师</p>
+                        <p class="word2">web前端开发工程师，主要职责是利用（X）HTML/CSS/Javascript/flash等各种Web技术进行产品的开发</p>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="5" class="space1 a images">
+                        <span class="left text">门槛</span>
+
+                    </td>
+                    <td colspan="5"  class="space1  imagess imagesss">
+                        <span class="text">难易程度</span>
+
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="5"  class="space1 a">
+                        <span class="left text">成长周期</span>
+                        <span class="color-word">1-3</span>
+                        <span class="text">年</span>
+                    </td>
+                    <td colspan="5"  class="space1">
+                        <span class="text">难易程度</span>
+                        <span class="color-word">345</span>
+                        <span class="text">家公司需要</span>
+                    </td>
+
+                </tr>
+                <tr class="a">
+                    <td colspan="4" rowspan="3" class="space a">
+                        <span class="text" >薪资待遇</span>
+                    </td>
+                    <td colspan="6" class="text">
+                        <span>0-1年</span>
+                        <span class="right">5k-10k/月</span>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="6" class="text">
+                        <span>1-3年</span>
+                        <span class="right">5k-10k/月</span>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="6" class="text">
+                        <span>0-3年</span>
+                        <span class="right">20k-50k/月</span>
+                    </td>
+                </tr>
+                </td>
+                </tr>
+                <tr>
+                    <td colspan="10"  class="a b">
+                        <span  class="word1">有</span>
+                        <span class="colorwarp">286</span>
+                        <span class="word1">人正在学</span>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="10" class="text1">
+                        <span>提示：在你学习之前你应该掌握xxxx、xxxxx、xx等语言基础</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="text01">
+                <p class="p10 bottom03">ios工程师</p>
+                <p class="p10 text-left">ios是由苹果公司开发的移动操作系统，ios与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内ios开发起步相对较晚，人才培养机制更是远远更不上市场发展速度。有限的ios开发人才成了国内企业必争的资源。</p>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="container word1 " style="margin-bottom: 40px;margin-top: 20px">
+    <p class="border">前端开发方向</p>
+</div>
+<main class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12  fare">
+                    <table width="100%">
+                        <tbody class="frame">
+                        <tr class="a">
+                            <td colspan="5">
+                                <img src="image/photo.jpg" alt="">
+                            </td>
+                            <td colspan="5" style="height: 141px">
+                                <p class="word1">web前端工程师</p>
+                                <p class="word2">web前端开发工程师，主要职责是利用（X）HTML/CSS/Javascript/flash等各种Web技术进行产品的开发</p>
+                            </td>
+                        </tr>
+                        <tr class="a">
+                            <td colspan="5" class="space1 a images">
+                                <span class="left text">门槛</span>
+
+                            </td>
+                            <td colspan="5"  class="space1  imagess imagesss">
+                                <span class="text">难易程度</span>
+
+                            </td>
+                        </tr>
+                        <tr class="a">
+                            <td colspan="5"  class="space1 a">
+                                <span class="left text">成长周期</span>
+                                <span class="color-word">1-3</span>
+                                <span class="text">年</span>
+                            </td>
+                            <td colspan="5"  class="space1">
+                                <span class="text">难易程度</span>
+                                <span class="color-word">345</span>
+                                <span class="text">家公司需要</span>
+                            </td>
+
+                        </tr>
+                        <tr class="a">
+                            <td colspan="4" rowspan="3" class="space a">
+                                <span class="text" >薪资待遇</span>
+                            </td>
+                            <td colspan="6" class="text">
+                                <span>0-1年</span>
+                                <span class="right">5k-10k/月</span>
+                            </td>
+                        </tr>
+                        <tr class="a">
+                            <td colspan="6" class="text">
+                                <span>1-3年</span>
+                                <span class="right">5k-10k/月</span>
+                            </td>
+                        </tr>
+                        <tr class="a">
+                            <td colspan="6" class="text">
+                                <span>0-3年</span>
+                                <span class="right">20k-50k/月</span>
+                            </td>
+                        </tr>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td colspan="10"  class="a b">
+                                <span  class="word1">有</span>
+                                <span class="colorwarp">286</span>
+                                <span class="word1">人正在学</span>
+                            </td>
+                        </tr>
+                        <tr class="a">
+                            <td colspan="10" class="text1">
+                                <span>提示：在你学习之前你应该掌握xxxx、xxxxx、xx等语言基础</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+            <div class="text01">
+                <p class="p10 bottom03">ios工程师</p>
+                <p class="p10 text-left">ios是由苹果公司开发的移动操作系统，ios与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内ios开发起步相对较晚，人才培养机制更是远远更不上市场发展速度。有限的ios开发人才成了国内企业必争的资源。</p>
+            </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12  fare">
+                    <table width="100%">
+                        <tbody class="frame">
+                        <tr class="a">
+                            <td colspan="5">
+                                <img src="image/photo.jpg" alt="">
+                            </td>
+                            <td colspan="5" style="height: 141px">
+                                <p class="word1">web前端工程师</p>
+                                <p class="word2">web前端开发工程师，主要职责是利用（X）HTML/CSS/Javascript/flash等各种Web技术进行产品的开发</p>
+                            </td>
+                        </tr>
+                        <tr class="a">
+                            <td colspan="5" class="space1 a images">
+                                <span class="left text">门槛</span>
+
+                            </td>
+                            <td colspan="5"  class="space1  imagess imagesss">
+                                <span class="text">难易程度</span>
+
+                            </td>
+                        </tr>
+                        <tr class="a">
+                            <td colspan="5"  class="space1 a">
+                                <span class="left text">成长周期</span>
+                                <span class="color-word">1-3</span>
+                                <span class="text">年</span>
+                            </td>
+                            <td colspan="5"  class="space1">
+                                <span class="text">难易程度</span>
+                                <span class="color-word">345</span>
+                                <span class="text">家公司需要</span>
+                            </td>
+
+                        </tr>
+                        <tr class="a">
+                            <td colspan="4" rowspan="3" class="space a">
+                                <span class="text" >薪资待遇</span>
+                            </td>
+                            <td colspan="6" class="text">
+                                <span>0-1年</span>
+                                <span class="right">5k-10k/月</span>
+                            </td>
+                        </tr>
+                        <tr class="a">
+                            <td colspan="6" class="text">
+                                <span>1-3年</span>
+                                <span class="right">5k-10k/月</span>
+                            </td>
+                        </tr>
+                        <tr class="a">
+                            <td colspan="6" class="text">
+                                <span>0-3年</span>
+                                <span class="right">20k-50k/月</span>
+                            </td>
+                        </tr>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td colspan="10"  class="a b">
+                                <span  class="word1">有</span>
+                                <span class="colorwarp">286</span>
+                                <span class="word1">人正在学</span>
+                            </td>
+                        </tr>
+                        <tr class="a">
+                            <td colspan="10" class="text1">
+                                <span>提示：在你学习之前你应该掌握xxxx、xxxxx、xx等语言基础</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="text01">
+                        <p class="p10 bottom03">ios工程师</p>
+                        <p class="p10 text-left">ios是由苹果公司开发的移动操作系统，ios与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内ios开发起步相对较晚，人才培养机制更是远远更不上市场发展速度。有限的ios开发人才成了国内企业必争的资源。</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12  fare">
+                    <table width="100%">
+                        <tbody class="frame">
+                        <tr class="a">
+                            <td colspan="5">
+                                <img src="image/photo.jpg" alt="">
+                            </td>
+                            <td colspan="5" style="height: 141px">
+                                <p class="word1">web前端工程师</p>
+                                <p class="word2">web前端开发工程师，主要职责是利用（X）HTML/CSS/Javascript/flash等各种Web技术进行产品的开发</p>
+                            </td>
+                        </tr>
+                        <tr class="a">
+                            <td colspan="5" class="space1 a images">
+                                <span class="left text">门槛</span>
+
+                            </td>
+                            <td colspan="5"  class="space1  imagess imagesss">
+                                <span class="text">难易程度</span>
+
+                            </td>
+                        </tr>
+                        <tr class="a">
+                            <td colspan="5"  class="space1 a">
+                                <span class="left text">成长周期</span>
+                                <span class="color-word">1-3</span>
+                                <span class="text">年</span>
+                            </td>
+                            <td colspan="5"  class="space1">
+                                <span class="text">难易程度</span>
+                                <span class="color-word">345</span>
+                                <span class="text">家公司需要</span>
+                            </td>
+
+                        </tr>
+                        <tr class="a">
+                            <td colspan="4" rowspan="3" class="space a">
+                                <span class="text" >薪资待遇</span>
+                            </td>
+                            <td colspan="6" class="text">
+                                <span>0-1年</span>
+                                <span class="right">5k-10k/月</span>
+                            </td>
+                        </tr>
+                        <tr class="a">
+                            <td colspan="6" class="text">
+                                <span>1-3年</span>
+                                <span class="right">5k-10k/月</span>
+                            </td>
+                        </tr>
+                        <tr class="a">
+                            <td colspan="6" class="text">
+                                <span>0-3年</span>
+                                <span class="right">20k-50k/月</span>
+                            </td>
+                        </tr>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td colspan="10"  class="a b">
+                                <span  class="word1">有
+                                <span class="colorwarp">286</span>
+                                人正在学</span>
+                            </td>
+                        </tr>
+                        <tr class="a">
+                            <td colspan="10" class="text1">
+                                <span>提示：在你学习之前你应该掌握xxxx、xxxxx、xx等语言基础</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="text01">
+                        <p class="p10 bottom03">ios工程师</p>
+                        <p class="p10 text-left">ios是由苹果公司开发的移动操作系统，ios与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内ios开发起步相对较晚，人才培养机制更是远远更不上市场发展速度。有限的ios开发人才成了国内企业必争的资源。</p>
+                    </div>
+                </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12  fare">
+            <table width="100%">
+                <tbody class="frame">
+                <tr class="a">
+                    <td colspan="5">
+                        <img src="image/photo.jpg" alt="">
+                    </td>
+                    <td colspan="5" style="height: 141px">
+                        <p class="word1">web前端工程师</p>
+                        <p class="word2">web前端开发工程师，主要职责是利用（X）HTML/CSS/Javascript/flash等各种Web技术进行产品的开发</p>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="5" class="space1 a images">
+                        <span class="left text">门槛</span>
+
+                    </td>
+                    <td colspan="5"  class="space1  imagess imagesss">
+                        <span class="text">难易程度</span>
+
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="5"  class="space1 a">
+                        <span class="left text">成长周期</span>
+                        <span class="color-word">1-3</span>
+                        <span class="text">年</span>
+                    </td>
+                    <td colspan="5"  class="space1">
+                        <span class="text">难易程度</span>
+                        <span class="color-word">345</span>
+                        <span class="text">家公司需要</span>
+                    </td>
+
+                </tr>
+                <tr class="a">
+                    <td colspan="4" rowspan="3" class="space a">
+                        <span class="text" >薪资待遇</span>
+                    </td>
+                    <td colspan="6" class="text">
+                        <span>0-1年</span>
+                        <span class="right">5k-10k/月</span>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="6" class="text">
+                        <span>1-3年</span>
+                        <span class="right">5k-10k/月</span>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="6" class="text">
+                        <span>0-3年</span>
+                        <span class="right">20k-50k/月</span>
+                    </td>
+                </tr>
+                </td>
+                </tr>
+                <tr>
+                    <td colspan="10"  class="a b">
+                        <span  class="word1">有</span>
+                        <span class="colorwarp">286</span>
+                        <span class="word1">人正在学</span>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="10" class="text1">
+                        <span>提示：在你学习之前你应该掌握xxxx、xxxxx、xx等语言基础</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="text01">
+                <p class="p10 bottom03">ios工程师</p>
+                <p class="p10 text-left">ios是由苹果公司开发的移动操作系统，ios与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内ios开发起步相对较晚，人才培养机制更是远远更不上市场发展速度。有限的ios开发人才成了国内企业必争的资源。</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12  fare">
+            <table width="100%">
+                <tbody class="frame">
+                <tr class="a">
+                    <td colspan="5">
+                        <img src="image/photo.jpg" alt="">
+                    </td>
+                    <td colspan="5" style="height: 141px">
+                        <p class="word1">web前端工程师</p>
+                        <p class="word2">web前端开发工程师，主要职责是利用（X）HTML/CSS/Javascript/flash等各种Web技术进行产品的开发</p>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="5" class="space1 a images">
+                        <span class="left text">门槛</span>
+
+                    </td>
+                    <td colspan="5"  class="space1  imagess imagesss">
+                        <span class="text">难易程度</span>
+
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="5"  class="space1 a">
+                        <span class="left text">成长周期</span>
+                        <span class="color-word">1-3</span>
+                        <span class="text">年</span>
+                    </td>
+                    <td colspan="5"  class="space1">
+                        <span class="text">难易程度</span>
+                        <span class="color-word">345</span>
+                        <span class="text">家公司需要</span>
+                    </td>
+
+                </tr>
+                <tr class="a">
+                    <td colspan="4" rowspan="3" class="space a">
+                        <span class="text" >薪资待遇</span>
+                    </td>
+                    <td colspan="6" class="text">
+                        <span>0-1年</span>
+                        <span class="right">5k-10k/月</span>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="6" class="text">
+                        <span>1-3年</span>
+                        <span class="right">5k-10k/月</span>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="6" class="text">
+                        <span>0-3年</span>
+                        <span class="right">20k-50k/月</span>
+                    </td>
+                </tr>
+                </td>
+                </tr>
+                <tr>
+                    <td colspan="10"  class="a b">
+                        <span  class="word1">有</span>
+                        <span class="colorwarp">286</span>
+                        <span class="word1">人正在学</span>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="10" class="text1">
+                        <span>提示：在你学习之前你应该掌握xxxx、xxxxx、xx等语言基础</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="text01">
+                <p class="p10 bottom03">ios工程师</p>
+                <p class="p10 text-left">ios是由苹果公司开发的移动操作系统，ios与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内ios开发起步相对较晚，人才培养机制更是远远更不上市场发展速度。有限的ios开发人才成了国内企业必争的资源。</p>
+            </div>
+        </div>
+            </div>
+        </main>
+<div class="container word1 " style="margin-bottom: 40px;margin-top: 20px">
+    <p class="border">运维方向</p>
+</div>
+<main class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12  fare">
+            <table width="100%">
+                <tbody class="frame">
+                <tr class="a">
+                    <td colspan="5">
+                        <img src="image/photo.jpg" alt="">
+                    </td>
+                    <td colspan="5" style="height: 141px">
+                        <p class="word1">web前端工程师</p>
+                        <p class="word2">web前端开发工程师，主要职责是利用（X）HTML/CSS/Javascript/flash等各种Web技术进行产品的开发</p>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="5" class="space1 a images">
+                        <span class="left text">门槛</span>
+
+                    </td>
+                    <td colspan="5"  class="space1  imagess imagesss">
+                        <span class="text">难易程度</span>
+
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="5"  class="space1 a">
+                        <span class="left text">成长周期</span>
+                        <span class="color-word">1-3</span>
+                        <span class="text">年</span>
+                    </td>
+                    <td colspan="5"  class="space1">
+                        <span class="text">难易程度</span>
+                        <span class="color-word">345</span>
+                        <span class="text">家公司需要</span>
+                    </td>
+
+                </tr>
+                <tr class="a">
+                    <td colspan="4" rowspan="3" class="space a">
+                        <span class="text" >薪资待遇</span>
+                    </td>
+                    <td colspan="6" class="text">
+                        <span>0-1年</span>
+                        <span class="right">5k-10k/月</span>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="6" class="text">
+                        <span>1-3年</span>
+                        <span class="right">5k-10k/月</span>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="6" class="text">
+                        <span>0-3年</span>
+                        <span class="right">20k-50k/月</span>
+                    </td>
+                </tr>
+                </td>
+                </tr>
+                <tr>
+                    <td colspan="10"  class="a b">
+                        <span  class="word1">有</span>
+                        <span class="colorwarp">286</span>
+                        <span class="word1">人正在学</span>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="10" class="text1">
+                        <span>提示：在你学习之前你应该掌握xxxx、xxxxx、xx等语言基础</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="text01">
+                <p class="p10 bottom03">ios工程师</p>
+                <p class="p10 text-left">ios是由苹果公司开发的移动操作系统，ios与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内ios开发起步相对较晚，人才培养机制更是远远更不上市场发展速度。有限的ios开发人才成了国内企业必争的资源。</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12  fare">
+            <table width="100%">
+                <tbody class="frame">
+                <tr class="a">
+                    <td colspan="5">
+                        <img src="image/photo.jpg" alt="">
+                    </td>
+                    <td colspan="5" style="height: 141px">
+                        <p class="word1">web前端工程师</p>
+                        <p class="word2">web前端开发工程师，主要职责是利用（X）HTML/CSS/Javascript/flash等各种Web技术进行产品的开发</p>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="5" class="space1 a images">
+                        <span class="left text">门槛</span>
+
+                    </td>
+                    <td colspan="5"  class="space1  imagess imagesss">
+                        <span class="text">难易程度</span>
+
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="5"  class="space1 a">
+                        <span class="left text">成长周期</span>
+                        <span class="color-word">1-3</span>
+                        <span class="text">年</span>
+                    </td>
+                    <td colspan="5"  class="space1">
+                        <span class="text">难易程度</span>
+                        <span class="color-word">345</span>
+                        <span class="text">家公司需要</span>
+                    </td>
+
+                </tr>
+                <tr class="a">
+                    <td colspan="4" rowspan="3" class="space a">
+                        <span class="text" >薪资待遇</span>
+                    </td>
+                    <td colspan="6" class="text">
+                        <span>0-1年</span>
+                        <span class="right">5k-10k/月</span>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="6" class="text">
+                        <span>1-3年</span>
+                        <span class="right">5k-10k/月</span>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="6" class="text">
+                        <span>0-3年</span>
+                        <span class="right">20k-50k/月</span>
+                    </td>
+                </tr>
+                </td>
+                </tr>
+                <tr>
+                    <td colspan="10"  class="a b">
+                        <span  class="word1">有</span>
+                        <span class="colorwarp">286</span>
+                        <span class="word1">人正在学</span>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="10" class="text1">
+                        <span>提示：在你学习之前你应该掌握xxxx、xxxxx、xx等语言基础</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="text01">
+                <p class="p10 bottom03">ios工程师</p>
+                <p class="p10 text-left">ios是由苹果公司开发的移动操作系统，ios与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内ios开发起步相对较晚，人才培养机制更是远远更不上市场发展速度。有限的ios开发人才成了国内企业必争的资源。</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12  fare">
+            <table width="100%">
+                <tbody class="frame">
+                <tr class="a">
+                    <td colspan="5">
+                        <img src="image/photo.jpg" alt="">
+                    </td>
+                    <td colspan="5" style="height: 141px">
+                        <p class="word1">web前端工程师</p>
+                        <p class="word2">web前端开发工程师，主要职责是利用（X）HTML/CSS/Javascript/flash等各种Web技术进行产品的开发</p>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="5" class="space1 a images">
+                        <span class="left text">门槛</span>
+
+                    </td>
+                    <td colspan="5"  class="space1  imagess imagesss">
+                        <span class="text">难易程度</span>
+
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="5"  class="space1 a">
+                        <span class="left text">成长周期</span>
+                        <span class="color-word">1-3</span>
+                        <span class="text">年</span>
+                    </td>
+                    <td colspan="5"  class="space1">
+                        <span class="text">难易程度</span>
+                        <span class="color-word">345</span>
+                        <span class="text">家公司需要</span>
+                    </td>
+
+                </tr>
+                <tr class="a">
+                    <td colspan="4" rowspan="3" class="space a">
+                        <span class="text" >薪资待遇</span>
+                    </td>
+                    <td colspan="6" class="text">
+                        <span>0-1年</span>
+                        <span class="right">5k-10k/月</span>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="6" class="text">
+                        <span>1-3年</span>
+                        <span class="right">5k-10k/月</span>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="6" class="text">
+                        <span>0-3年</span>
+                        <span class="right">20k-50k/月</span>
+                    </td>
+                </tr>
+                </td>
+                </tr>
+                <tr>
+                    <td colspan="10"  class="a b">
+                        <span  class="word1">有</span>
+                        <span class="colorwarp">286</span>
+                        <span class="word1">人正在学</span>
+                    </td>
+                </tr>
+                <tr class="a">
+                    <td colspan="10" class="text1">
+                        <span>提示：在你学习之前你应该掌握xxxx、xxxxx、xx等语言基础</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="text01">
+                <p class="p10 bottom03">ios工程师</p>
+                <p class="p10 text-left">ios是由苹果公司开发的移动操作系统，ios与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内ios开发起步相对较晚，人才培养机制更是远远更不上市场发展速度。有限的ios开发人才成了国内企业必争的资源。</p>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="container word1 " style="margin-bottom: 40px;margin-top: 20px">
+<p class="border">运维方向</p>
+</div>
+<div class="container">
+    <div class="row">
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12  fare">
+    <table width="100%">
+        <tbody class="frame">
+        <tr class="a">
+            <td colspan="5">
+                <img src="image/photo.jpg" alt="">
+            </td>
+            <td colspan="5" style="height: 141px">
+                <p class="word1">web前端工程师</p>
+                <p class="word2">web前端开发工程师，主要职责是利用（X）HTML/CSS/Javascript/flash等各种Web技术进行产品的开发</p>
+            </td>
+        </tr>
+        <tr class="a">
+            <td colspan="5" class="space1 a images">
+                <span class="left text">门槛</span>
+
+            </td>
+            <td colspan="5"  class="space1  imagess imagesss">
+                <span class="text">难易程度</span>
+
+            </td>
+        </tr>
+        <tr class="a">
+            <td colspan="5"  class="space1 a">
+                <span class="left text">成长周期</span>
+                <span class="color-word">1-3</span>
+                <span class="text">年</span>
+            </td>
+            <td colspan="5"  class="space1">
+                <span class="text">难易程度</span>
+                <span class="color-word">345</span>
+                <span class="text">家公司需要</span>
+            </td>
+
+        </tr>
+        <tr class="a">
+            <td colspan="4" rowspan="3" class="space a">
+                <span class="text" >薪资待遇</span>
+            </td>
+            <td colspan="6" class="text">
+                <span>0-1年</span>
+                <span class="right">5k-10k/月</span>
+            </td>
+        </tr>
+        <tr class="a">
+            <td colspan="6" class="text">
+                <span>1-3年</span>
+                <span class="right">5k-10k/月</span>
+            </td>
+        </tr>
+        <tr class="a">
+            <td colspan="6" class="text">
+                <span>0-3年</span>
+                <span class="right">20k-50k/月</span>
+            </td>
+        </tr>
+        </td>
+        </tr>
+        <tr>
+            <td colspan="10"  class="a b">
+                <span  class="word1">有</span>
+                <span class="colorwarp">286</span>
+                <span class="word1">人正在学</span>
+            </td>
+        </tr>
+        <tr class="a">
+            <td colspan="10" class="text1">
+                <span>提示：在你学习之前你应该掌握xxxx、xxxxx、xx等语言基础</span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="text01">
+        <p class="p10 bottom03">ios工程师</p>
+        <p class="p10 text-left">ios是由苹果公司开发的移动操作系统，ios与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内ios开发起步相对较晚，人才培养机制更是远远更不上市场发展速度。有限的ios开发人才成了国内企业必争的资源。</p>
+    </div>
+</div>
+</div>
+</div>
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class=" col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <p class="pad1">技能树——改变你我</p>
+                    <ul class="pad">
+                        <li><a href="#">关于我们</a></li>
+                        <li ><a href="#" class="li1">联系我们</a></li>
+                        <li><a href="#">合作企业</a></li>
+                        <div class="clearfix"></div>
+                    </ul>
+
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <p class="pad1">旗下网站</p>
+                    <ul class="pad" style="padding-left: 0;">
+                        <li ><a href="#" >草船云服务器</a></li>
+                        <li><a href="#">最强IT特训营</a></li>
+                        <div class="clearfix"></div>
+                    </ul>
+
+                    <ul style="margin-top: 18px; padding-left: 0px;" class="pad">
+                        <li><a href="#">葡萄藤轻游戏</a></li>
+                        <li><a href="#">桌游精灵</a></li>
+                        <div class="clearfix"></div>
+                    </ul>
+
+                </div>
+                <div class=" col-lg-5 col-md-5 col-sm-12 col-xs-12 text-right tr">
+                    <p class="pad1">微信公众平台</p>
+                    <img src="image/weixin.jpg" alt="">
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center" style="padding-left: 0;padding-right:0 ">
+            <p class="p6"><span>Copyright&emsp;©&emsp;2015技能树&emsp;www.jnshu.com&nbsp;All&emsp;Rights&emsp;Reserved</span><span>京IP备13005880号</span></p>
+        </div>
+    </div>
+
+    </div>
+
+</footer>
+</body>
+</html>

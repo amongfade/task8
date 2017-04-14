@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="define.css">
+    <link rel="stylesheet" href="lg.css">
+    <link rel="stylesheet" href="sm.css">
+    <link rel="stylesheet" href="xs.css">
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        html{
+            font-family: 62.5%;
+        }
+        body{
+            background: #fafafa;
+        }
+
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        header {
+
+            height: 40px;
+            line-height: 40px;
+            background: #fff;
+        }
+        .a{
+            height: 40px;
+            font-size: 1.6rem;
+        }
+
+        .phone{
+            line-height: 40px;
+            color: #29b078;
+            white-space: nowrap;
+        }
+        .call{
+            
+            line-height: 40px;
+        }
+        .nav1{
+            background:#29b078;
+            width:100%;
+            margin: 0;
+
+        }
+        .nav2{
+
+            color:#ffffff;
+            font-size: 1.6rem;
+
+        }
+        bott{
+            border-bottom: 5px #fff solid;
+        }
+        .nav ul li a{
+            font-size: 1rem;
+            color: #fff;
+            text-decoration: none;
+             height: 63px
+        }
+        .navbar-nav>li>a:hover{
+            border-bottom: 3px #ffffff solid;
+            background-color: #29b078;
+            color: white;
+        }
+
+        .cot{
+            margin-top: 100px;
+            padding-bottom: 20px;
+        }
+        .cot2{
+            background-color: white;
+            padding-top: 20px;
+        }
+        .cot1{
+            margin-top: 50px;
+        }
+        .he{
+            height: 210px;
+        }
+		.bd{
+			margin-bottom: 20px;
+		}
+
+        .shape{
+            margin:10px auto;
+
+
+        }
+        .text{
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        .text2{
+            font-size: 1.6rem;
+            color: #999999;
+            padding: 0 30px;
+
+        }
+        .no{
+            display: inline-block;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .no1{
+            color:#29b078;
+            font-size: 1.6rem;
+        }
+        .no2{
+            color:#999999;
+            font-size: 1.6rem;
+            margin-top: 10px;
+        }
+
+        .circle{
+            background:#fff;
+            border-radius: 50%;
+            height:60px;
+            width:60px;
+            text-align: center;
+            line-height: 60px;
+            font-size: 1.8rem;
+            color:#29b078;
+            display: inline-block;
+            float: left;
+        }
+        .re{
+            width: 50%;
+            font-size: 16px;
+            color: #999999;
+            text-align: left;
+            margin-left: 10%;
+            display: inline-block;
+        }
+        .st{
+            display: flex;
+            align-items: center;
+            height: 100px;
+        }
+        .arrow{
+
+            width: 21px;
+            height: 21px;
+            background-image: url(image/sprite.png);
+            background-position: -444px -0px;
+            display: inline-block;
+
+
+            margin-left: 5%;
+
+        }
+        .stu{
+            padding: 3%;
+            background-color: #ffffff;
+
+        }
+
+        .pho{
+            background-image: url("image/sprite.png");
+            background-position: -225px -0px;
+            background-color: white;
+            width: 108px;
+            height: 108px;
+            margin: 2% auto 20% auto;
+
+            display: block;
+
+
+        }
+        .pho1{
+            width: 108px;
+            height: 108px;
+            margin: 2% auto 20% auto;
+            background-color: #ffffff;
+            background-position:-0px -0px;
+            display: block;
+
+            background-image: url("image/sprite.png");
+        }
+        .pho2{
+            width: 108px;
+            height: 108px;
+            margin: 2% auto 20% auto;
+            background-color: #ffffff;
+            background-position:-332px -0px;
+            display: block;
+
+            background-image: url("image/sprite.png");
+        }
+        .pho3{
+            width: 108px;
+            height: 108px;
+            margin: 2% auto 20% auto;
+            background-color: #ffffff;
+            background-position:-110px -0px ;
+            display: block;
+
+            background-image: url("image/sprite.png");
+        }
+        .itr{
+            font-size: 1.8rem;
+            font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"SimSun";
+            text-align: center;
+
+        }
+        .itr1{
+            margin-top:20px;
+            font-size: 1.6rem;
+            background-color: white;
+            color: #999999;
+
+        }
+        .responsive{
+            display: inline-block;
+            height: auto;
+            max-width: 20%;
+
+        }
+
+        .item >li{
+            margin-top: 20px;
+            float: left;
+            margin-right: 5.7%;
+            font-size: 1.2rem;
+            color: #999999;
+        }
+        a{
+            color: #999999;
+        }
+        
+        footer{
+            height: auto;
+            margin-top: 20px;
+            background-color:#29b078;
+        }
+        footer ul{
+            list-style: none;
+        }
+        footer a{
+            color: #ffffff;
+            font-size: 1.6rem;
+            float: left;
+            padding:0 2%;
+
+        }
+        .pad{
+            margin-top: 55px;
+        }
+        .text3{
+            font-size: 1.6rem;
+            color: #ffffff;
+        }
+        .pad1{
+            padding-left: 2%;
+            margin: 30px 0 15px 0;
+            color: #ffffff;
+            font-size: 1.6rem;
+        }
+
+        .li1{
+            border-right: 1px solid #ffffff;
+            border-left: 1px solid #ffffff;
+
+        }
+        .p6{
+            font-size: 1.2rem;
+            color: white;
+            background-color: #29b078;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+        .im1{
+            display: flex;
+            justify-items: center;
+            flex-direction: row;
+            flex-wrap:nowrap;
+            align-items: center;
+        }
+        .im2{
+            margin:0;
+            flex-shrink:1;
+        }
+        .bg{
+			
+            text-align: center;
+           
+            height: 180px;
+            line-height: 180px;
+        }
+        .rechange{
+			display: inline-block;
+			width: 19%;
+			background-color: #ffffff;
+		
+        }
+        .c{
+        	background-color: #ffffff;
+        }
+        .rechange img{
+        	max-width: 80%;
+
+        }
+        .bg1{
+            background-color: white;
+        }
+      .lj{
+          float: left;
+          margin-left: 5%;
+      }
+      .tr{
+
+      }
+      main a:hover{
+          box-shadow:#666 0px 0px 10px;
+      }
+      li a:hover{
+          text-decoration: none;
+          color: #999999;
+      }
+      main a{
+          display: block;
+      }
+
+        footer a:hover{
+            text-decoration: none;
+            color: white;
+        }
+        p{
+            margin: 0;
+        }
+        .end{
+            text-align: center;
+        }
+        .navbar-toggle .icon-bar{
+            background-color: #29b078;
+        }
+
+
+        @media screen and (min-width:768px)  {
+            .end{
+                float: right;
+            }
+        }
+        @media (max-width: 996px){
+            .text2{
+                text-align: center;
+            }
+            .he{
+                text-align: center;
+            }
+            .pad1{
+                text-align: center;
+            }
+            footer a{
+                margin: 0 auto;
+            }
+            .pad{
+                margin-left: 38%;
+            }
+            .tr{
+                text-align: center;
+            }
+
+        }
+
+
+        @media (max-width: 776px){
+            .pad{
+                margin-left: 35%;
+            }
+            .st{
+                padding: 0 20%;
+
+            }
+            .stu{
+                margin:0 20%;
+            }
+            .bg{
+                margin: 0 20% 0 20%;
+                background-color: white;
+                margin-bottom: 20px;
+            }
+            .bg1{
+                background-color: #fafafa;
+            }
+            .rechange img{
+        	max-width: 100%;
+
+        }
+         .rechange{
+			display: block;
+			width: 100%;
+			background-color: #ffffff;
+		
+        }
+        }
+
+        @media screen and (min-width:768px) and (max-width:996px){
+            .ne{
+                margin:0 22%;
+            }
+        }
+@media (max-width: 600px){
+        	.pad{
+        		margin-left: 30%;
+        	}
+        }
+@media(max-width: 450px){
+	.pad{
+		margin-left: 20%;
+	}
+}
+
+    </style>
+
+
+</head>
+<body>
+
+
+<header>
+    <div class="container">
+    <div class="row">
+
+        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2 phone a">客服热线：010-7834</div>
+        <div class="col-md-8 col-lg-8 col-sm-7 col-xs-5" ></div>
+
+        <div class="col-md-2 col-lg-2 col-sm-3 col-xs-5 " style="line-height: 40px;text-align: right;"><img src="image/group.jpg" alt="" class="call"></div>
+
+    </div>
+    </div>
+</header>
+<nav class=" nav1">
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <img src="image/co.jpg" alt="">
+            </div>
+            <button type="button" class="navbar-toggle btn btn-priamry" data-toggle="collapse" data-target="#example-navbar-collapse" aria-expanded="true" style="background-color: #ffffff;margin-top: 18px;">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"style="margin-top: 10px">
+                <div class="collapse navbar-collapse text-center" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav  end">
+                        <li><a href="#" class="nav2 bottom">首页</a></li>
+                        <li><a href="../task8-3/task8-3.html" class="nav2 bottom">职业</a></li>
+                        <li><a href="../task8-2/task8-2.html" class="nav2">推荐</a></li>
+                        <li><a href="#" class="nav2">关于</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div id="myCarousel" class="carousel slide">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="image/image1.jpg" alt="First slide">
+        </div>
+        <div class="item">
+            <img src="image/image2.jpg" alt="Second slide">
+        </div>
+        <div class="item">
+            <img src="image/image3.jpg" alt="Third slide">
+        </div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="carousel-control left" href="#myCarousel"
+       data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="carousel-control  right" href="#myCarousel"
+       data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+
+</div>
+
+<div class="container cot">
+    <div class="row">
+
+
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 he center-block">
+            <img src="image/shape/shape1.jpg" alt="" class="shape center-block">
+            <p class="text">高效</p>
+            <p class="text2 ">将五到七年的成长时间缩短到一年</p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 he">
+            <img src="image/shape/shape2.jpg" alt="" class="shape center-block">
+            <p class="text">规范</p>
+            <p class="text2">标准的实战教程，不会走弯路</p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 he">
+            <img src="image/shape/shape3.jpg" alt="" class="shape center-block">
+            <p class="text">人脉</p>
+            <p class="text2">同班好友，同院学长，技术大师，入学就混入职脉圈，为以后铺平道路</p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 he" style="padding-top: 40px;padding-left: 20px;border-left: 1px dashed #dedede">
+            <img src="image/shape/user.jpg" alt="">
+            <span class="no1">12400</span>
+            <p class="no2" >累计在线学习人数</p>
+            <img src="image/shape/user.jpg" alt="">
+            <span class="no1">12400</span>
+            <p class="no2">学员已经找到满意工作</p>
+        </div>
+
+    </div>
+
+</div>
+<div class="cot text">
+    <p>如何学习</p>
+
+</div>
+<div class="container cot1">
+    <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 st" style="height:100px">
+        <div class="circle ">1</div>
+        <div class="re"> 匹配你现在的个人情况，寻找适合自己的岗位</div>
+        <i class="arrow"></i>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 st">
+        <div class="circle ">2</div>
+        <div class="re"> 了解职业前景薪金待遇、竞争压力等</div>
+        <i class="arrow"></i>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 st">
+        <div class="circle ">3</div>
+        <div class="re"> 掌握行业内顶级技能</div>
+        <i class="arrow"></i>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 st">
+        <div class="circle ">4</div>
+        <div class="re">查看职业目标任务</div>
+
+    </div>
+    </div>
+
+</div>
+<div class="container cot1">
+    <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 st" >
+        <div class="circle ">5</div>
+        <div class="re">参考学习资源，掌握技能点，准个完成任务</div>
+        <i class="arrow"></i>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 st">
+        <div class="circle ">6</div>
+        <div class="re"> 加入班级，和小伙伴们互帮互助，一块学习</div>
+        <i class="arrow"></i>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 st">
+        <div class="circle ">7</div>
+        <div class="re">选择导师，一路引导，加速自己成长</div>
+        <i class="arrow"></i>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 st">
+        <div class="circle ">8</div>
+        <div class="re">完成职业技能，升级业界大牛</div>
+
+    </div>
+    </div>
+
+</div>
+<div class="cot text">
+    <p>优秀学员展示</p>
+
+</div>
+<div class="container cot1">
+    <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 bd" >
+        <div class="stu">
+            <div class="pho">
+
+            </div>
+            <div class="itr">技术顾问：罗大佑</div>
+            <div class="itr1">百度技术总监：互联网基础服务领域，从事虚拟主机，云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设</div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 bd" >
+
+        <div class="stu">
+            <div class="pho1">
+            </div>
+            <div class="itr">技术顾问：罗大佑</div>
+            <div class="itr1">百度技术总监：互联网基础服务领域，从事虚拟主机，云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设</div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 bd" >
+        <div class="stu">
+            <div class="pho2">
+            </div>
+            <div class="itr">技术顾问：罗大佑</div>
+            <div class="itr1">百度技术总监：互联网基础服务领域，从事虚拟主机，云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设</div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 bd" >
+        <div class="stu">
+            <div class="pho3">
+            </div>
+            <div class="itr">技术顾问：罗大佑</div>
+            <div class="itr1">百度技术总监：互联网基础服务领域，从事虚拟主机，云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设</div>
+        </div>
+    </div>
+    </div>
+    <div style="text-align: center"><img src="image/shape/icon.jpg"   alt=""></div>
+</div>
+
+<div class="cot text">
+    <p>战略合作企业</p>
+
+</div>
+<!--<div class="container1">-->
+    <!--<div class="row1 " style="background-color: white">-->
+        <!--<ul style="list-style: none；">-->
+        <!--<li class="colu-lg-2 colu-md-2 colu-sm-3 colu-xs-10">-->
+            <!--<img src="image/shape/ali.jpg" alt="" class="responsive"></li>-->
+        <!--<li class="colu-lg-2 colu-md-2 colu-sm-3 colu-xs-10">-->
+            <!--<img src="image/shape/jinshan.jpg"    alt="" class="responsive"></li>-->
+        <!--<li class="colu-lg-2 colu-md-2 colu-sm-3 colu-xs-10">-->
+            <!--<img src="image/shape/hx.jpg" alt="" class="responsive"></li>-->
+        <!--<li class="colu-lg-2 colu-md-2 colu-sm-3 colu-xs-10">-->
+            <!--<img src="image/shape/qn.jpg" alt="" class="responsive"></li>-->
+        <!--<li class="colu-lg-2 colu-md-2 colu-sm-3 colu-xs-10">-->
+            <!--<img src="image/shape/rl.jpg" alt="" class="responsive"></li>-->
+        <!--</ul>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="container">-->
+    <!--<div class="row im1">-->
+    <!--<img src="image/shape/ali.jpg" alt="" class="responsive im2">-->
+    <!--<img src="image/shape/jinshan.jpg" alt="" class="responsive im2">-->
+    <!--<img src="image/shape/hx.jpg" alt="" class="responsive im2">-->
+    <!--<img src="image/shape/rl.jpg" alt="" class="responsive im2">-->
+    <!--<img src="image/shape/qn.jpg" alt="" class="responsive im2">-->
+    <!--</div>-->
+<!--</div>-->
+<main class="container">
+    <div class="row c">
+        <div class="rechange">
+            <a href="" class="bg"><img src="image/shape/ali.jpg" alt=""></a>
+        </div>
+        <div class="rechange">
+            <a href="" class="bg"><img src="image/shape/jsy.jpg" alt=""></a>
+        </div>
+        <div class="rechange">
+            <a href="" class="bg"><img src="image/shape/hx.jpg" alt=""></a>
+        </div>
+        <div class="rechange">
+            <a href="" class="bg"><img src="image/shape/rl.jpg" alt=""></a>
+        </div>
+        <div class=" rechange" >
+            <a href="" class="bg"> <img src="image/shape/qn.jpg" alt=""></a>
+
+
+        </a>
+    </div>
+</main>
+
+<div class="container-fluid cot cot2">
+    <div class="text">友情链接</div>
+    <div class="container1 cot1">
+        <div class="row1">
+        <ul>
+            <li class="lj"><a href="#">手机软件</a></li>
+            <li class="lj"><a href="#">教师招聘</a></li>
+            <li class="lj"><a href="#">找工作</a></li>
+            <li class="lj"><a href="#">教师招聘</a></li>
+            <li class="lj"><a href="#">找工作</a></li>
+            <li class="lj"><a href="#">手机软件</a></li>
+            <li class="lj"><a href="#">教师招聘</a></li>
+            <li class="lj"><a href="#">找工作</a></li>
+            <li class="lj"><a href="#">手机软件</a></li>
+            <li class="lj"><a href="#">手机软件</a></li>
+            <li class="lj"><a href="#">手机软件</a></li>
+            <li class="lj"><a href="#">教师招聘</a></li>
+            <li class="lj"><a href="#">找工作</a></li>
+            <li class="lj"><a href="#">教师招聘</a></li>
+            <li class="lj"><a href="#">找工作</a></li>
+            <li class="lj"><a href="#">手机软件</a></li>
+            <li class="lj"><a href="#">教师招聘</a></li>
+            <li class="lj"><a href="#">找工作</a></li>
+            <li class="lj"><a href="#">手机软件</a></li>
+            <li class="lj"><a href="#">手机软件</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class=" col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <p class="pad1">技能树——改变你我</p>
+                    <ul class="pad">
+                        <li><a href="#">关于我们</a></li>
+                        <li ><a href="#" class="li1">联系我们</a></li>
+                        <li><a href="#">合作企业</a></li>
+                        <div class="clearfix"></div>
+                    </ul>
+
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                    <p class="pad1">旗下网站</p>
+                    <ul class="pad">
+                        <li ><a href="#" >草船云服务器</a></li>
+                        <li><a href="#">最强IT特训营</a></li>
+                        <div class="clearfix"></div>
+                    </ul>
+
+                    <ul style="margin-top: 18px" class="pad">
+                        <li><a href="#">葡萄藤轻游戏</a></li>
+                        <li><a href="#">桌游精灵</a></li>
+                        <div class="clearfix"></div>
+                    </ul>
+
+                </div>
+                <div class=" col-lg-5 col-md-5 col-sm-12 col-xs-12 text-right tr">
+                    <p class="pad1">微信公众平台</p>
+                    <img src="image/shape/weixin.jpg" alt="">
+                    <div class=""></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center" style="padding-left: 0;padding-right:0 ">
+            <p class="p6"><span>Copyright&emsp;©&emsp;2015技能树&emsp;www.jnshu.com&nbsp;All&emsp;Rights&emsp;Reserved</span><span>京IP备13005880号</span></p>
+        </div>
+    </div>
+
+    </div>
+
+</footer>
+
+<!--<head>-->
+<!--div.container-->
+<!--<p class="phone">-->
+<!--客服热线：010-7834-->
+<!--</p>-->
+<!--<img src="image/group.jpg" alt="">-->
+<!--</head>-->
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</body>
+</html>
